@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Generator</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body onload="onPageLoad()">
+    <div class="container">
+        <label for="clientId" class="form-label">Client ID</label>
+        <input type="text" class="form-control" id="clientId" placeholder="">
+        <br><br>
+        <label for="clientSecret" class="form-label">Client Secret</label>
+        <input type="text" class="form-control" id="clientSecret" placeholder="">
+
+        <div class="mb-3">
+        <br>
+            <input class="btn bnt-primary btn-lg" type="button" onclick="requestAuthorization()" value="Request Authorization">
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
